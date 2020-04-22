@@ -1,0 +1,51 @@
+#chat-body {
+  padding: 0px;
+  height:80vh;
+  overflow-y: scroll;
+}
+
+.chat-item{
+    max-width: 100%;
+    display: block;
+    border-bottom: 1px solid #c2c2c2;
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    padding: 12px;
+    position: relative;
+}
+
+
+.chat-item:hover {
+    background-color: #c2c2c2;
+
+}
+
+.chat-item-img {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    display: inline;
+    z-index: 0;
+}
+
+.chat-item-users {
+    display: inline;
+    font-size: 17px;
+    margin-left: 12px;
+}
+
+.new-msg-count {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    border-radius: 50%;
+    background-color: blue;
+    color: #ffffff;
+    min-height: 22px;
+    min-width: 22px;
+    text-align: center;
+    height: auto;
+    font-family: arial;
+    line-height: 22px;
+}
