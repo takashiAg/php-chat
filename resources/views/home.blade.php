@@ -8,52 +8,17 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Chat list</div>
                 <div id="chat-body" class="panel-body">
-                    <div class="chat-item">
-                        <img class="img-circle img-responsive chat-item-img" src="{{asset('img/default-user.png')}}">
-                        <div class="chat-item-users">Faraz</div>
-                        <div class="new-msg-count">12</div>
-                    </div>
+                    @include('layouts.chat_list')
                 </div>
             </div>
         </div>
         <!-- end chat list section -->
         <!-- message section -->
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
             <div class="panel panel-default">
                 <div class="panel-heading">Conversation</div>
                 <div id="msg-body" class="panel-body">
-                    {{--  <div class="no-chat">No chat Selected</div>  --}}
-                    <div class="msg-item">
-                        <img class="img-circle img-responsive msg-item-img" src="{{asset('img/default-user.png')}}">
-                        <div class="msg-item-txt">
-                            blah blah blah
-                            <div class="msg-item-data">
-                                12/2/2017 5:17 AM
-                            </div>
-                        </div>
-                    </div>
-
-                    
-                    <div class="msg-item me">
-                        <img class="img-circle img-responsive msg-item-img" src="{{asset('img/default-user.png')}}">
-                        <div class="msg-item-txt">
-                            blah blah blah
-                            <div class="msg-item-data">
-                                12/2/2017 5:17 AM
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="msg-item">
-                        <img class="img-circle img-responsive msg-item-img" src="{{asset('img/default-user.png')}}">
-                        <div class="msg-item-txt">
-                            blah blah blah
-                            <div class="msg-item-data">
-                                12/2/2017 5:17 AM
-                            </div>
-                        </div>
-                    </div>
+                    @include('layouts.msg_list')
                 </div>
                 <div class="panel-footer">
                     <div class="row">
