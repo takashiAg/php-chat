@@ -47,6 +47,12 @@
                             <li><a href="{{ route('login') }}">Login</a></li>
                             <li><a href="{{ route('register') }}">Register</a></li>
                         @else
+                            <li>
+                                <button type="button" class="btn btn-primary navbar-btn" data-toggle="modal" data-target="#myModal">
+                                    <span class="glyphicon glyphicon-plus"></span>
+                                    New Chat!
+                                </button>
+                            </li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                     {{ Auth::user()->name }} <span class="caret"></span>
@@ -74,6 +80,45 @@
 
         @yield('content')
     </div>
+
+<!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Create New Chat</h4>
+      </div>
+      <div class="modal-body">
+          <form id="create-form">
+              <fieldset class="form-group">
+                  <label>
+                      Select Users
+                  </label>
+                  <select id="create-data" class="form-control" multiple="">
+                    <option value="1">Ali</option>
+                    <option value="2">Hassan</option>
+                    <option value="3">Hussain</option>
+                    <option value="4">Abid</option>
+                  </select>
+              </fieldset>
+          </form>
+      </div> 
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="create">Create</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
