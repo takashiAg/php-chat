@@ -11,6 +11,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.min.css" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
 </head>
@@ -100,7 +101,7 @@
                   <label>
                       Select Users
                   </label>
-                  <select id="create-data" class="form-control" multiple="">
+                  <select id="create-data" class="selectpicker" multiple="">
                     <option value="1">Ali</option>
                     <option value="2">Hassan</option>
                     <option value="3">Hussain</option>
@@ -122,5 +123,6 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
 </body>
 </html>
