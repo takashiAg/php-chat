@@ -34,7 +34,7 @@
                     </div>
 
                     
-                    <div class="msg-item">
+                    <div class="msg-item me">
                         <img class="img-circle img-responsive msg-item-img" src="{{asset('img/default-user.png')}}">
                         <div class="msg-item-txt">
                             blah blah blah
